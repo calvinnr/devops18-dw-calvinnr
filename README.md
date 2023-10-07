@@ -6,3 +6,7 @@ Task 1 - Instalasi VM di IDCH, Instalasi MySQL, Konfigurasi Aplikasi Frontend & 
 ### [Day 2, 3 & 4 (Docker & CI/CD Jenkins & Gitlab)](https://github.com/calvinnr/devops18-dw-calvinnr/blob/main/Stage%202/Week%202/Day%202/README.md)
 Task 1 - Instalasi Docker, Deploy Aplikasi, Reverse Proxy & SSL Certificate on Top Docker
 Task 2 - Jalankan Jenkins on Top Docker, Pipeline Frontend & Backend, Reverse Proxy & SSL Certificate, Auto Trigger Build Pipeline
+## [Week 3](https://github.com/calvinnr/devops18-dw-calvinnr/tree/262b7ccb4705b9fc66220135d2116ce6647cc48d/Stage%202/Week%203)
+### [Day 2 (Terraform)](https://github.com/calvinnr/devops18-dw-calvinnr/tree/262b7ccb4705b9fc66220135d2116ce6647cc48d/Stage%202/Week%203/Day%202)
+Challenge 1 - Membuat Infrastuktur AWS menggunakan Terraform
+Task 1 - Deploy Wayshub-fe on Top Docker menggunakan Terraform
