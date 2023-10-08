@@ -189,6 +189,88 @@ server {
     proxy_pass http://103.175.218.224:3000;
     }
 }
+server {
+    server_name ne-appserver.calvin.studentdumbways.my.id;
+    location / {
+    proxy_pass http://103.175.218.224:9100;
+    }
+}
+server {
+    server_name ne-gateway.calvin.studentdumbways.my.id;
+    location / {
+    proxy_pass http://103.175.217.130:9100;
+    }
+}
+server {
+    server_name prometheus.calvin.studentdumbways.my.id;
+    location / {
+    proxy_pass http://103.175.218.224:9090;
+    }
+}
+server {
+    server_name dashboard.calvin.studentdumbways.my.id;
+    location / {
+    proxy_set_header Host dashboard.calvin.studentdumbways.my.id;
+    proxy_pass http://103.175.218.224:13000;
+    }
+}
+```
+
+- grafana.yml
+
+```ansible
+- become: true
+  gather_facts: false
+  hosts: appserver
+  tasks:
+    - name: Run Docker Grafana
+      command: docker run -d --name=grafana -p 13000:3000 grafana/grafana
+```
+
+- prometheus.yml
+
+```ansible
+global:
+  scrape_interval:     10s
+# A scrape configuration containing exactly one endpoint to scrape:
+# Here it's Prometheus itself.
+scrape_configs:
+  # The job name is added as a label `job=<job_name>` to any timeseries scraped from this config.
+  - job_name: 'appserver'
+
+    # Override the global default and scrape targets from this job every 5 seconds.
+    scrape_interval: 5s
+
+    static_configs:
+      - targets: ['ne-appserver.calvin.studentdumbways.my.id','ne-gateway.calvin.studentdumbways.my.id']
+```
+
+- prom.yml
+
+```ansible
+- become: true
+  gather_facts: false
+  hosts: appserver
+  tasks:
+    - name: Making Directory Monitoring
+      command: mkdir monitoring
+    - name: Copy Prometheus Configuration
+      copy:
+       src: /home/ubuntu/ansible/prometheus.yml
+       dest: /home/calvin/monitoring
+    - name: Run Docker Prometheus
+      command: docker run -d -p 9090:9090 --name prometheus \ -v /home/calvin/monitoring/prometheus.yml:/opt/bitnami/prometheus/conf/prometheus.yml \ bitnami/prometheus:latest
+```
+
+- node-exporter.yml
+
+```ansible
+- become: true
+  gather_facts: false
+  hosts: all
+  tasks:
+    - name: Run Node-Exporter
+      command: docker run -d -p 9100:9100 --name node-exporter bitnami/node-exporter:latest
 ```
 
 #### 3. Hasil Ansible-Playbook
@@ -207,9 +289,21 @@ Berikut Hasil dari `adduser.yml`, `docker.yml`, `wayshub-fe.yml`, `nginx.yml`
 
 > wayshub-fe.yml
 
-<img width="1440" alt="Screenshot 2023-10-09 at 02 27 06" src="https://github.com/calvinnr/devops18-dw-calvinnr/assets/101310300/05ffea69-c453-4f9a-bd14-029fae374996">
+<img width="1440" alt="Screenshot 2023-10-09 at 03 31 41" src="https://github.com/calvinnr/devops18-dw-calvinnr/assets/101310300/c82ea113-d36a-433c-b0e0-47bad27f44dd">
 
 > nginx.yml
+
+<img width="1440" alt="Screenshot 2023-10-09 at 03 32 23" src="https://github.com/calvinnr/devops18-dw-calvinnr/assets/101310300/150045d0-814e-4032-8e6c-5c8a6d7d6178">
+
+> node-exporter.yml
+
+<img width="1440" alt="Screenshot 2023-10-09 at 04 07 56" src="https://github.com/calvinnr/devops18-dw-calvinnr/assets/101310300/0e527cdb-e56c-44ec-9992-c45acaedeecd">
+
+> prom.yml
+
+<img width="1440" alt="Screenshot 2023-10-09 at 04 16 26" src="https://github.com/calvinnr/devops18-dw-calvinnr/assets/101310300/94f7e6de-0a70-4e89-82f0-886140c5aa7d">
+
+> grafana.yml
 
 #### 4. Hasil Deploy Aplikasi
 
