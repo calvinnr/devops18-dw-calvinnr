@@ -16,8 +16,6 @@
     * Buat Konfigurasi Proxy lalu Masukkan Kedalam Gateway
     * Gunakan Docker Compose untuk deploy aplikasi Wayshub-Frontend
 
-<br>
-
 #### 1. Instalasi Ansible
 
 <img width="1440" alt="Screenshot 2023-10-08 at 16 24 44" src="https://github.com/calvinnr/devops18-dw-calvinnr/assets/101310300/3abc3a92-6334-423f-ab3d-17bcc012292a">
