@@ -17,7 +17,6 @@
     * Gunakan Docker Compose untuk deploy aplikasi Wayshub-Frontend
 
 <br>
-<br>
 
 #### 1. Instalasi Ansible
 
