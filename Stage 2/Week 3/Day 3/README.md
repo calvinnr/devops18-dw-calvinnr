@@ -305,8 +305,24 @@ Berikut Hasil dari `adduser.yml`, `docker.yml`, `wayshub-fe.yml`, `nginx.yml`
 
 > grafana.yml
 
-#### 4. Hasil Deploy Aplikasi
+#### 4. Hasil Deploy On Top Docker
 
 <img width="1440" alt="Screenshot 2023-10-09 at 02 39 25" src="https://github.com/calvinnr/devops18-dw-calvinnr/assets/101310300/5a5dc78a-e4f2-4ad5-be88-0dd51761300d">
 
-Dan berikut hasil dari Wayshub-Fe yang sudah Terdeploy dan Reverse Proxy-nya teraplikasikan dengan baik
+> Wayshub-Frontend
+
+<img width="1440" alt="Screenshot 2023-10-09 at 04 20 14" src="https://github.com/calvinnr/devops18-dw-calvinnr/assets/101310300/522f154d-0180-4433-a258-93c3382c3b74">
+
+> Node-Exporter Appserver
+
+<img width="1440" alt="Screenshot 2023-10-09 at 04 20 25" src="https://github.com/calvinnr/devops18-dw-calvinnr/assets/101310300/ab811f3f-f43a-4d56-a57c-4d523f501888">
+
+> Node-Exporter Gateway
+
+<img width="1440" alt="Screenshot 2023-10-09 at 04 17 04" src="https://github.com/calvinnr/devops18-dw-calvinnr/assets/101310300/2fb6cf48-d779-48ee-8ca3-ae95e33d4185">
+
+> Prometheus
+
+<img width="1440" alt="Screenshot 2023-10-09 at 04 17 44" src="https://github.com/calvinnr/devops18-dw-calvinnr/assets/101310300/51f9b40d-c9e1-4cf6-887c-359f22cb8ad6">
+
+> Grafana
