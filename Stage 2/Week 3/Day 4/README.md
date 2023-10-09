@@ -14,7 +14,7 @@ Setelah itu klik **Prometheus**
 <img width="1440" alt="Screenshot 2023-10-09 at 04 34 40" src="https://github.com/calvinnr/devops18-dw-calvinnr/assets/101310300/9d11c84b-6ab4-4803-8eba-8d59e48473d2">
 <img width="1440" alt="Screenshot 2023-10-09 at 04 34 55" src="https://github.com/calvinnr/devops18-dw-calvinnr/assets/101310300/4c08e848-8c63-4df2-b2df-7ec4e41c97c6">
 
-Berikut beberapa konfigurasi yang saya ribuh
+Berikut beberapa konfigurasi yang saya rubah
 
 > Name: Prometheus
 >
