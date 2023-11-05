@@ -14,5 +14,5 @@ Challenge 1 - Membuat Infrastuktur AWS menggunakan Terraform
 Task 1 - Deploy Wayshub-fe on Top Docker menggunakan Terraform
 ### [Day 3 (CMT - Ansible)](https://github.com/calvinnr/devops18-dw-calvinnr/blob/617f9b7be70fa619e3afb96c17f04ae205686131/Stage%202/Week%203/Day%203/README.md)
 Task 1 - Membuat konfigurasi Ansible dan melakukan semua setup terhadap server yang dituju melalui node lokal sebanyak mungkin
-### [Day 4 (Monitoring - Grafana, Prometheus & Node Exporter)](https://github.com/calvinnr/devops18-dw-calvinnr/blob/617f9b7be70fa619e3afb96c17f04ae205686131/Stage%202/Week%203/Day%203/README.md)
+### [Day 4 (Monitoring - Grafana, Prometheus & Node Exporter)](https://github.com/calvinnr/devops18-dw-calvinnr/blob/90786f6ec5fc3b686f9735f5b4276dfad7b70f4d/Stage%202/Week%203/Day%204/README.md)
 Task 1 - Mengkonfigurasi Dashboard di Grafana
