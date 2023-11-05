@@ -8,7 +8,11 @@ Task 1 - Instalasi Docker, Deploy Aplikasi, Reverse Proxy & SSL Certificate on T
 <br>
 Task 2 - Jalankan Jenkins on Top Docker, Pipeline Frontend & Backend, Reverse Proxy & SSL Certificate, Auto Trigger Build Pipeline
 ## [Week 3](https://github.com/calvinnr/devops18-dw-calvinnr/tree/262b7ccb4705b9fc66220135d2116ce6647cc48d/Stage%202/Week%203)
-### [Day 2 (Terraform)](https://github.com/calvinnr/devops18-dw-calvinnr/tree/262b7ccb4705b9fc66220135d2116ce6647cc48d/Stage%202/Week%203/Day%202)
+### [Day 2 (IaC - Terraform)](https://github.com/calvinnr/devops18-dw-calvinnr/tree/262b7ccb4705b9fc66220135d2116ce6647cc48d/Stage%202/Week%203/Day%202/README.md)
 Challenge 1 - Membuat Infrastuktur AWS menggunakan Terraform
 <br>
 Task 1 - Deploy Wayshub-fe on Top Docker menggunakan Terraform
+### [Day 3 (CMT - Ansible)](https://github.com/calvinnr/devops18-dw-calvinnr/blob/617f9b7be70fa619e3afb96c17f04ae205686131/Stage%202/Week%203/Day%203/README.md)
+Task 1 - Membuat konfigurasi Ansible dan melakukan semua setup terhadap server yang dituju melalui node lokal sebanyak mungkin
+### [Day 4 (Monitoring - Grafana, Prometheus & Node Exporter)](https://github.com/calvinnr/devops18-dw-calvinnr/blob/617f9b7be70fa619e3afb96c17f04ae205686131/Stage%202/Week%203/Day%203/README.md)
+Task 1 - Mengkonfigurasi Dashboard di Grafana
